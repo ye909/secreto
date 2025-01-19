@@ -1,0 +1,99 @@
+* {
+    padding: 0%;
+    margin: 0;
+    transition: all;
+  }
+  html {
+    background-image: url(/assets/fondo_card.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main-content {
+    text-align: center;
+  }
+  .header-banner img {
+    width: 15%;
+  }
+  
+  
+  
+  .container {
+    margin: 2px auto;
+      width: 30%;
+      background-color: rgba(6, 6, 6, 0.4);
+      border-radius: 10px;
+      padding: 20px;
+  /* display: none; */
+  }
+  input {
+    width:60%;
+    padding: 6px;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+  }
+  input:hover {
+    color: black;
+  
+  }
+  
+  button {
+    background-color: transparent;
+    width:65%;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 10px;
+  
+  }
+  button:hover{
+      background: blue;
+      border: none;
+      box-shadow: blue 2px 2px 2px 3px, blue 2px 2px 2px 3px, blue 2px 3px 3px 3px,
+        blue 2px 2px 2px 3px;
+  transition: 2s;
+  }
+  
+  h1{
+    text-align: center;
+  padding: 10px;
+  box-shadow: blue 2px 2px 2px 1px;
+  color:rgba(255, 255, 0, 0.501);
+  }
+  h2{
+      background-image:linear-gradient(to left,green, red, rgb(248, 244, 7));
+      -webkit-animation-fill-color:transparent ;
+      -webkit-background-clip: text;
+      background-clip: text;
+      padding: 8px;
+      font-weight: bold;
+      text-align: center;
+  
+  }
+  
+  
+  .datos_amigo {
+   
+      display: none
+    }
+    .containerbtnsorteo{
+   
+  
+      display:none;
+   
+    }
+    .containerbtnsorteo button{
+      width: 40%;
+    margin-left: 400px;
+    padding: 10px;
+    cursor: pointer;
+    }
+    p{
+      font-size: 20px;
+      text-align: center;
+      padding: 10px;
+    }
