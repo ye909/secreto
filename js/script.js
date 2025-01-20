@@ -14,14 +14,32 @@ formularioAmigo.addEventListener("submit", (event) => {
   const nombre = document.getElementById("nombre").value;
   const areaTrabajo = document.getElementById("areaTrabajo").value;
   const tipoRegalo = document.getElementById("tipoRegalo").value;
+            // Crear un nuevo objeto amigo
+            const nuevoAmigo = {
+              nombre: nombre,
+              area: areaTrabajo,
+              regalo: tipoRegalo
+          };
+
+          // Añadir el nuevo amigo al array
+          amigos.push(nuevoAmigo);
 
 
-  if (nombre) {
-    
-   const titulo_data = document.createElement("p");
-   titulo_data.innerHTML = ` BIENVENIDOS/A  <br> ${nombre}  `;
-   info_datos.append(titulo_data);
+  if (nombre == "" ) {
+    const mensaje = document.getElementById("mensaje");
+    mensaje.innerHTML = "Por favor ingrese su nombre";
   
+  
+  }else{
+    const titulo_data = document.createElement("p");
+    titulo_data.innerHTML = ` BIENVENIDOS/A  <br> ${nombre}  `;
+    info_datos.append(titulo_data);
+    if (container) {
+      container.style.display = "none";
+      containerbtnsorteo.style.display = "inline";
+      
+  
+    }
   }
 
   if (areaTrabajo) {
@@ -48,12 +66,7 @@ formularioAmigo.addEventListener("submit", (event) => {
 
 //   containersorteo.style.display = "inline";
 
-  if (container) {
-    container.style.display = "none";
-    containerbtnsorteo.style.display = "inline";
-    
 
-  }
    
  });
 

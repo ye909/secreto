@@ -97,3 +97,7 @@
       text-align: center;
       padding: 10px;
     }
+    span {
+      font-size: 10px;
+      color: red;
+    }

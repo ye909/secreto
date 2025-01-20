@@ -52,5 +52,4 @@ function seleccionarAmigoAleatorio(amigos) {
        datos_amigo.appendChild( regaloaleatoria );
 
 
-
-
+      
