@@ -23,8 +23,10 @@ formularioAmigo.addEventListener("submit", (event) => {
 
           // Añadir el nuevo amigo al array
           amigos.push(nuevoAmigo);
-   
-
+const verResgistrados=document.getElementById("verResgistrados")
+verResgistrados.addEventListener("click",()=>{
+  info_datos.innerHTML= amigos
+})
   if (nombre == "" ) {
     const mensaje = document.getElementById("mensaje");
     mensaje.innerHTML = "Por favor ingrese su nombre";
@@ -64,16 +66,11 @@ formularioAmigo.addEventListener("submit", (event) => {
    }
 
 
+//   containersorteo.style.display = "inline";
 
 
-// const verResgistrados=document.getElementById("verResgistrados")
-// verResgistrados.addEventListener("click", () => {
-//  datos_amigo.innerHTML=nuevoAmigo
-//  alert(datos_amigo.nombre)
-// } )
    
  });
-
 
  const sorteo = document.getElementById("sorteo");
 

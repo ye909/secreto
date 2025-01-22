@@ -64,16 +64,15 @@ formularioAmigo.addEventListener("submit", (event) => {
    }
 
 
+//   containersorteo.style.display = "inline";
 
 
-// const verResgistrados=document.getElementById("verResgistrados")
-// verResgistrados.addEventListener("click", () => {
-//  datos_amigo.innerHTML=nuevoAmigo
-//  alert(datos_amigo.nombre)
-// } )
    
  });
-
+ const verResgistrados=document.getElementById("verResgistrados")
+ verResgistrados.addEventListener("click", () => {
+  datos_amigo.innerHTML=amigos.nombre
+ } )
 
  const sorteo = document.getElementById("sorteo");
 
