@@ -10,7 +10,13 @@ const amigos = [
   
 
 
+  const verResgistrados=document.getElementById("verResgistrados")
+verResgistrados.addEventListener("click",(e) =>{
+ e.preventDefault()
  
+ info_datos.innerHTML=amigos
+
+ })
 
   
 function seleccionarAmigoAleatorio(amigos) {

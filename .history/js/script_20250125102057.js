@@ -7,12 +7,9 @@ const containerbtnsorteo = document.getElementById("containerbtnsorteo");
 
  const datos_amigo =document.getElementById("datos_amigo")
 const info_datos = document.getElementById("info_datos")
-const info_datos1=  document.getElementById("info_datos1")
-const otro =document.getElementById("otro")
 formularioAmigo.addEventListener("submit", (event) => {
   event.preventDefault(); // Evita que el formulario se envíe (si se trata de un formulario)
   
-
 
   const nombre = document.getElementById("nombre").value;
   const areaTrabajo = document.getElementById("areaTrabajo").value;
@@ -49,21 +46,48 @@ formularioAmigo.addEventListener("submit", (event) => {
 verResgistrados.addEventListener("click",(e) =>{
  e.preventDefault()
  
-
+ // Generar HTML a partir del arreglo de objetos
  const htmlContent = amigos
  .map(
    (amigo) =>
-     `<ol class="numero">
-       <li>${amigo.nombre} ${amigo.area} ${amigo.regalo}</li>
+     `<div>
+       <p><strong>Nombre:</strong> ${amigo.nombre}</p>
    
-     </ol>`
+     </div>`
  )
  .join("");
 
-
- info_datos1.innerHTML = htmlContent;
+// Asignar el contenido generado a info_datos
+info_datos.innerHTML = htmlContent;
  })
+//   if (areaTrabajo) {
+    
+//     const titulo_data = document.createElement("p");
+//     titulo_data.innerHTML = `Del area  de trabajo <br> ${areaTrabajo} `;
+//     info_datos.append(titulo_data);
+   
+//    }
+//   if (tipoRegalo) {
+//   const Regalo = document.createElement("p");
+//   Regalo.innerHTML = `Tu regalo  ${tipoRegalo} <br> para el amigo  `;
+//   info_datos.append(Regalo);
+// ;
+//   }
+//    if (nombre) {
+    
+//     const titulo_data = document.createElement("p");
+//     titulo_data.innerHTML = ` ${nombre} <br> Te queremos felisitar por aser parte de esta actibidad <br>  por eso un te informamos cual es tu `;
+//     info_datos.append(titulo_data);
+   
+//    }
 
+
+
+// 
+// verResgistrados.addEventListener("click", () => {
+//  datos_amigo.innerHTML=nuevoAmigo
+//  alert(datos_amigo.nombre)
+// } )
    
  });
 
@@ -100,7 +124,6 @@ verResgistrados.addEventListener("click",(e) =>{
  }());
  datos_amigo.style.display = "inline";
  containerbtnsorteo.style.display = "none";
- info_datos1.style.display = "none";
  });
 
 

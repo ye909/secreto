@@ -8,11 +8,9 @@ const containerbtnsorteo = document.getElementById("containerbtnsorteo");
  const datos_amigo =document.getElementById("datos_amigo")
 const info_datos = document.getElementById("info_datos")
 const info_datos1=  document.getElementById("info_datos1")
-const otro =document.getElementById("otro")
 formularioAmigo.addEventListener("submit", (event) => {
   event.preventDefault(); // Evita que el formulario se envíe (si se trata de un formulario)
   
-
 
   const nombre = document.getElementById("nombre").value;
   const areaTrabajo = document.getElementById("areaTrabajo").value;
@@ -53,7 +51,7 @@ verResgistrados.addEventListener("click",(e) =>{
  const htmlContent = amigos
  .map(
    (amigo) =>
-     `<ol class="numero">
+     `<ol>
        <li>${amigo.nombre} ${amigo.area} ${amigo.regalo}</li>
    
      </ol>`
@@ -100,7 +98,6 @@ verResgistrados.addEventListener("click",(e) =>{
  }());
  datos_amigo.style.display = "inline";
  containerbtnsorteo.style.display = "none";
- info_datos1.style.display = "none";
  });
 
 

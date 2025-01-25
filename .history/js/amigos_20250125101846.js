@@ -10,7 +10,25 @@ const amigos = [
   
 
 
+  const verResgistrados=document.getElementById("verResgistrados")
+  const info_datos = document.getElementById("info_datos");
+verResgistrados.addEventListener("click",(e) =>{
+ e.preventDefault()
  
+ // Generar HTML a partir del arreglo de objetos
+ const htmlContent = amigos
+ .map(
+   (amigo) =>
+     `<div>
+       <p><strong>Nombre:</strong> ${amigo.nombre}</p>
+   
+     </div>`
+ )
+ .join("");
+
+// Asignar el contenido generado a info_datos
+info_datos.innerHTML = htmlContent;
+ })
 
   
 function seleccionarAmigoAleatorio(amigos) {

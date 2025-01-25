@@ -74,8 +74,8 @@
       text-align: center;
   
   }
- ol{
-    list-style-type: decimal; 
+  .numero li{
+    list-style-type: upper-roman; 
   }
   
   .datos_amigo {

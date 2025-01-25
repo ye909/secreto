@@ -100,7 +100,6 @@ verResgistrados.addEventListener("click",(e) =>{
  }());
  datos_amigo.style.display = "inline";
  containerbtnsorteo.style.display = "none";
- info_datos1.style.display = "none";
  });
 
 

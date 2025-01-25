@@ -74,20 +74,18 @@
       text-align: center;
   
   }
- ol{
-    list-style-type: decimal; 
-  }
   
-  .datos_amigo {
+  
+  /* .datos_amigo {
    
       display: none
-    }
-    .containerbtnsorteo{
+    } */
+    /* .containerbtnsorteo{
    
   
       display:none;
    
-    }
+    } */
     .containerbtnsorteo button{
       width: 40%;
     margin-left: 400px;

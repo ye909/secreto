@@ -9,8 +9,8 @@ const containerbtnsorteo = document.getElementById("containerbtnsorteo");
 const info_datos = document.getElementById("info_datos")
 const info_datos1=  document.getElementById("info_datos1")
 const otro =document.getElementById("otro")
-formularioAmigo.addEventListener("submit", (event) => {
-  event.preventDefault(); // Evita que el formulario se envíe (si se trata de un formulario)
+formularioAmigo.addEventListener("submit", () => {
+ Evita que el formulario se envíe (si se trata de un formulario)
   
 
 
@@ -100,7 +100,6 @@ verResgistrados.addEventListener("click",(e) =>{
  }());
  datos_amigo.style.display = "inline";
  containerbtnsorteo.style.display = "none";
- info_datos1.style.display = "none";
  });
 
 

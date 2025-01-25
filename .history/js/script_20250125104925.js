@@ -12,7 +12,21 @@ const otro =document.getElementById("otro")
 formularioAmigo.addEventListener("submit", (event) => {
   event.preventDefault(); // Evita que el formulario se envíe (si se trata de un formulario)
   
+  if (otro) {
+    const nombre = document.getElementById("nombre").value;
+  const areaTrabajo = document.getElementById("areaTrabajo").value;
+  const tipoRegalo = document.getElementById("tipoRegalo").value;
+            // Crear un nuevo objeto amigo
+            const nuevoAmigo = {
+              nombre: nombre,
+              area: areaTrabajo,
+              regalo: tipoRegalo
+          };
 
+          // Añadir el nuevo amigo al array
+          amigos.push(nuevoAmigo);
+          otro.reset()
+  }
 
   const nombre = document.getElementById("nombre").value;
   const areaTrabajo = document.getElementById("areaTrabajo").value;
@@ -100,7 +114,6 @@ verResgistrados.addEventListener("click",(e) =>{
  }());
  datos_amigo.style.display = "inline";
  containerbtnsorteo.style.display = "none";
- info_datos1.style.display = "none";
  });
 
 

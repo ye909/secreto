@@ -1,18 +1,32 @@
+const amigos=[{
+    nombre: "Juan",
+    area:"logistica ",
+    regalo:"zapatillas"
+
+},
+{
+    nombre: "daniel",
+      area:"recursos ",
+      regalo:"reloj"
+},
+{
+nombre:"anpara",
+    area:"alministrador",
+     regalo:"tualla"
+},
+{
+    nombre: "Paola",
+     area:"marketing ",
+    regalo:"sudadera"
+},
+{
+    nombre: "Pedro",
+     area:"finansas",
+    regalo:"libro"
+}]
 
 
-const amigos = [
-    { nombre: "Juan", area: "logística", regalo: "zapatillas" },
-    { nombre: "Daniel", area: "recursos", regalo: "reloj" },
-    { nombre: "Anpara", area: "administrador", regalo: "toalla" },
-    { nombre: "Paola", area: "marketing", regalo: "sudadera" },
-    { nombre: "Pedro", area: "finanzas", regalo: "libro" },
-  ];
-  
 
-
- 
-
-  
 function seleccionarAmigoAleatorio(amigos) {
 
     
