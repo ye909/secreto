@@ -48,3 +48,23 @@ function sortearAmigo() {
         resultado.appendChild(liResultado);
     });
 }
+
+
+
+// // Esperamos a que el DOM esté completamente cargado
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Obtenemos el formulario y el botón "Nuevo amigo"
+//     const formularioAmigo = document.getElementById('formularioAmigo');
+//     const botonNuevoAmigo = document.getElementById('Otroamigo');
+
+//     // Agregamos un event listener al botón "Nuevo amigo"
+//     botonNuevoAmigo.addEventListener('click', function (event) {
+//         event.preventDefault(); // Prevenimos cualquier comportamiento por defecto
+
+//         // Limpiamos todos los campos del formulario
+//         formularioAmigo.reset();
+
+//         // Opcional: Si quieres mostrar un mensaje al usuario
+//         alert('El formulario ha sido reiniciado.');
+//     });
+// });

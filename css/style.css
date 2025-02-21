@@ -43,7 +43,7 @@
   
   button {
     background-color: transparent;
-    width:65%;
+    width:45%;
     justify-content: center;
     padding: 7px;
     border-radius: 10px;
@@ -74,9 +74,6 @@
       text-align: center;
   
   }
- ol{
-    list-style-type: decimal; 
-  }
   
   .datos_amigo {
    
@@ -84,13 +81,11 @@
     }
     .containerbtnsorteo{
    
-  
       display:none;
    
     }
     .containerbtnsorteo button{
-      width: 40%;
-    margin-left: 400px;
+      width: 20%;
     padding: 10px;
     cursor: pointer;
     }
@@ -102,4 +97,9 @@
     span {
       font-size: 15px;
       color: red;
+    }
+
+    .container button{
+      display: flex;
+      justify-content: space-between;
     }

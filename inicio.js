@@ -2,7 +2,7 @@
     setTimeout(function() {
         document.getElementById('message').style.display = 'none';
        
-    }, 3100);
+    }, 3200);
    
     setTimeout(function() {
         document.getElementById('message').style.display = 'none';

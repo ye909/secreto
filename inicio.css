@@ -18,16 +18,21 @@ body, html {
 
 #message {
     font-size: 4em;
-    color: #333;
+    background-image: linear-gradient(to top,#044cf3, #f12711, #f5af19,#f40e34,#f5af19,#06f5bd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     animation: fadeIn 1s ease-out forwards;
+ 
 }
 
 @keyframes fadeIn {
     to {
         opacity: 1;
         transform: translateY(0);
+       
     }
 }
 a{
@@ -44,7 +49,7 @@ button{
     height: 10vh;
     background: rgb(97, 97, 205);
     border-radius: 60px;
-    font-size: 30px;
+    font-size: 20px;
     border:none;
     background: transparent;
 }
