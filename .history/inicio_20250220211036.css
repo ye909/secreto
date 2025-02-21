@@ -1,0 +1,49 @@
+body {
+    perspective: 800px; /* Crea el espacio 3D */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .scene {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  
+  .cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d; /* Importante para el 3D */
+    transition: transform 1s ease-in-out; /* Para animaciones */
+  }
+  
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo */
+    color: white;
+    border: 2px solid white;
+  }
+  
+  /* Posiciona cada cara del cubo */
+  .front  { transform: translateZ(150px); }
+  .back   { transform: rotateY(180deg) translateZ(150px); }
+  .right  { transform: rotateY(90deg) translateZ(150px); }
+  .left   { transform: rotateY(-90deg) translateZ(150px); }
+  .top    { transform: rotateX(90deg) translateZ(150px); }
+  .bottom { transform: rotateX(-90deg) translateZ(150px); }
+  
+  /* Ejemplo de animación al pasar el mouse */
+  .scene:hover .cube {
+    transform: rotateY(360deg);
+  }
